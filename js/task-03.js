@@ -4,7 +4,6 @@ const workers = [
   { name: 'Randy', sName: 'Litin', age: 21, occupation: 'programmer'},
 ];
 
-
 const refs = document.querySelector(".workersList");
 const userMarkup = workers => {
   return workers
@@ -20,8 +19,6 @@ const userMarkup = workers => {
     })
     .join('');
 };
-
-
 
 
 const show = () => {
