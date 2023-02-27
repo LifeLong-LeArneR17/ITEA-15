@@ -22,3 +22,13 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+
+.li-item {
+  border: 3px solid tomato;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  list-style: none;
+}

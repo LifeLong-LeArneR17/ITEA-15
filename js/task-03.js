@@ -1,14 +1,30 @@
-const images = [
-  {
-    url: 'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-    alt: 'White and Black Long Fur Cat',
-  },
-  {
-    url: 'https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-    alt: 'Orange and White Koi Fish Near Yellow Koi Fish',
-  },
-  {
-    url: 'https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-    alt: 'Group of Horses Running',
-  },
+const workers = [
+  { name: 'Vasya', sName: 'Matsevko', age: 40, occupation: 'director' },
+  { name: 'Kesha', sName: 'Fedorov', age: 24, occupation: 'manager' },
+  { name: 'Randy', sName: 'Litin', age: 21, occupation: 'programmer'},
 ];
+
+
+const refs = document.querySelector(".workersList");
+const userMarkup = workers => {
+  return workers
+    .map(({name, sName, age, occupation }) => {
+      return `<li class="li-item">
+      <h3>${name}</h3>
+    <p> 
+      Second Name: ${sName} <br/>
+       age: ${age} <br/>
+       occupation: ${occupation} <br/>
+      </p>
+      </li>`;
+    })
+    .join('');
+};
+
+
+
+
+const show = () => {
+  refs.insertAdjacentHTML('beforebegin', userMarkup(workers));
+}
+show();
