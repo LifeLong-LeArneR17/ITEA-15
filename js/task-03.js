@@ -1,7 +1,7 @@
 const workers = [
-  { name: 'Vasya', sName: 'Matsevko', age: 40, occupation: 'director' },
-  { name: 'Kesha', sName: 'Fedorov', age: 24, occupation: 'manager' },
-  { name: 'Randy', sName: 'Litin', age: 21, occupation: 'programmer'},
+  { name: 'Vasya', sName: 'Matsevko', age: 40, occupation: 'director', salary: '' },
+  { name: 'Kesha', sName: 'Fedorov', age: 24, occupation: 'manager', salary: '' },
+  { name: 'Randy', sName: 'Litin', age: 21, occupation: 'programmer', salary: '' },
 ];
 
 const refs = document.querySelector(".workersList");
